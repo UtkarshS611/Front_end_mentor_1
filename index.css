@@ -1,0 +1,86 @@
+@font-face {
+    font-family: my_font;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my_font';
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+img{
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    height: 44rem;
+    width: 25rem;
+    background-color: #212529;
+    border-radius: 10px;
+}
+
+.details{
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    span{
+        color: #9ef01a;
+    }
+}
+
+.about{
+    font-size: 1rem;
+    color: #fff;
+    opacity: 70%;
+}
+.btn{
+    display: flex;
+    /* background-color: aqua; */
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    gap: 1rem;
+}
+button{
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #495057;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:active{
+    background-color: #9ef01a;
+    color: #212529;
+}
+
+/*RESPONSIVE CODES*/
+@media(max-width:768px){
+    button{
+        width: 16rem;
+    }
+}
